@@ -25,12 +25,25 @@ function Resume() {
       >
         <BiDownload fontSize={20} /> Download CV
       </a>
-      <div className="py-[50px] justify-center flex items-center overflow-hidden z-20">
+      <div className="py-[50px] justify-center flex flex-col items-center overflow-hidden z-20">
         <Document
           file="../../YATENDRAUPADHYAY_InternshalaResume.pdf"
           className="flex justify-center shadow-xl"
         >
-          <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          <Page
+            pageNumber={1}
+            scale={width > 786 ? 1 : 0.4} // Adjust this based on your needs
+          />
+        </Document>
+        --------------------------------------------------------
+        <Document
+          file="../../YATENDRAUPADHYAY_InternshalaResume.pdf"
+          className="flex justify-center shadow-xl"
+        >
+          <Page
+            pageNumber={2}
+            scale={width > 786 ? 1 : 0.4} // Adjust this based on your needs
+          />
         </Document>
       </div>
       <a
