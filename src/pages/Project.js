@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectCard from "../components/ProjectCard";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThreads } from "@fortawesome/free-brands-svg-icons";
 
 function Project() {
   return (
@@ -11,20 +13,31 @@ function Project() {
       />
       <div className="z-20 flex items-center justify-center gap-3 m-2 flex-wrap">
         <ProjectCard
+          name={
+            <>
+              Threads Clone <FontAwesomeIcon icon={faThreads} />
+            </>
+          }
+          image="/project/Threads2.png"
+          about={
+            "Threads Clone: A streamlined MERN Stack replica fostering user connections, posts, and real-time chats via Socket.Io with dark mode functionality. Experience dynamic social interactions in a compact, feature-rich platform.Explore an enhanced social media environment where users can share, connect, and converse effortlessly."
+          }
+          demo="https://cloning-threads.vercel.app/"
+          code="https://github.com/Upadhyay-Yatendra/Cloning-Threads"
+        />
+        <ProjectCard
           name={"Travel World 🚀"}
-          image={"/project/logo.png"}
+          image={"/project/TravelWorld.png"}
           about={
             "Travel world is a FullStack MERN based tour and travels app which provides users with the details of a various travelling locations. It allows users to book the tickets for their desired holiday destinations and review and rate the destinations ."
           }
-          demo={
-            "https://travel-world-drab.vercel.app/"
-          }
+          demo={"https://travel-world-drab.vercel.app/"}
           code={"https://github.com/Upadhyay-Yatendra/TravelWorld"}
         />
 
         <ProjectCard
           name={"PictoFusion 🖼️"}
-          image={"/project/DalleLogo.jpg"}
+          image={"/project/DALLE.png"}
           about={
             "PictoFusion is a modern Ai using web app.It lets user generate Ai images based on the given prompt .Users can share their creations to the community platform "
           }
@@ -46,17 +59,17 @@ function Project() {
 
         <ProjectCard
           name={"CodeX 🤖"}
-          image={"/project/logo2.png"}
+          image={"/project/img4.png"}
           about={
             "CodeX: The Responsive FullStack AI ChatBot that solves user queries instantly.It uses React on front-end and node-express on backend.Built using openAi plugins"
           }
           demo={"https://code-x-fawn.vercel.app/"}
           code={"https://github.com/Upadhyay-Yatendra/CodeX"}
         />
-        
+
         <ProjectCard
           name={"E-commerce platform Backend 🗃️"}
-          image={"/project/img4.png"}
+          image={"/project/eCom.jpg"}
           about={
             "This is a complete working Backend of an E-commerce platform like amazon.It has all the functionalities required for an e-commerce plaform."
           }

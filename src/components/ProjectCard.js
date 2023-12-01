@@ -10,7 +10,7 @@ function ProjectCard({ name, about, image, demo, code, note }) {
           <Tilt>
             <div className="flex items-center justify-center">
               <img
-                className="object-cover object-center rounded max-h-96 w-auto"
+                className="object-cover object-center rounded-3xl  max-h-96 w-auto"
                 alt="project"
                 src={image}
               />
