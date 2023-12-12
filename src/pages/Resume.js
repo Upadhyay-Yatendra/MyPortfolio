@@ -18,7 +18,7 @@ function Resume() {
         className="h-full w-full object-cover opacity-10 absolute bottom-0"
       />
       <a
-        href={"../../YATENDRAUPADHYAY_InternshalaResume.pdf"}
+        href={"../../Yatendra_upadhyay.pdf"}
         target="_blank"
         rel="noreferrer"
         className="flex items-center z-20 justify-center gap-3 px-6 py-2 rounded  shadow-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out my-3"
@@ -26,7 +26,7 @@ function Resume() {
         <BiDownload fontSize={20} /> Download CV
       </a>
       <div className="py-[50px] justify-center flex flex-col items-center overflow-hidden z-20">
-        <Document
+        {/* <Document
           file="../../YATENDRAUPADHYAY_InternshalaResume.pdf"
           className="flex justify-center shadow-xl"
         >
@@ -35,19 +35,19 @@ function Resume() {
             scale={width > 786 ? 1 : 0.4} // Adjust this based on your needs
           />
         </Document>
-        --------------------------------------------------------
+        -------------------------------------------------------- */}
         <Document
-          file="../../YATENDRAUPADHYAY_InternshalaResume.pdf"
+          file="../../Yatendra_upadhyay.pdf"
           className="flex justify-center shadow-xl"
         >
           <Page
-            pageNumber={2}
+            pageNumber={1}
             scale={width > 786 ? 1 : 0.4} // Adjust this based on your needs
           />
         </Document>
       </div>
       <a
-        href={"../../YATENDRAUPADHYAY_InternshalaResume.pdf"}
+        href={"../../Yatendra_upadhyay.pdf"}
         target="_blank"
         rel="noreferrer"
         className="flex items-center z-20 justify-center gap-3 px-6 py-2 rounded  shadow-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out my-3"
