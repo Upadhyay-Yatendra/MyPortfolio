@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -8,7 +8,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AnimeCursor from "./components/AnimeCursor";
 import ScrollToTop from "./components/ScrollToTop";
+import { logPageView } from "./analytics";
+
 function App() {
+  useEffect(() => {
+    // Log page view on component mount
+    logPageView();
+  }, []);
   return (
     <div className="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900">
       <AnimeCursor />
