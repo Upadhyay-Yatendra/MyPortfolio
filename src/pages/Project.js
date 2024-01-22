@@ -29,7 +29,7 @@ function Project() {
           name={"Travel World 🚀"}
           image={"/project/TravelWorld.png"}
           about={
-            "TravelWorld: FullStack MERN-based tour and travels app with integrated OpenAI-powered chatbot for seamless trip planning, ticket booking, and destination reviews."
+            "TravelWorld: FullStack MERN-based tour and travels app with integrated OpenAI-powered chatbot for seamless trip planning, ticket booking, and destination reviews.Razorpay payment integration to accept customer payments."
           }
           demo={"https://travel-world-drab.vercel.app/"}
           code={"https://github.com/Upadhyay-Yatendra/TravelWorld"}
