@@ -1,17 +1,17 @@
 import React from "react";
 import { BsWindows } from "react-icons/bs";
 import {
+  SiPycharm,
   SiVisualstudiocode,
   SiPostman,
   SiVercel,
-  SiNetlify,
   SiRender,
 } from "react-icons/si";
 function Toolstack() {
   const data = [
     {
-      icon: <BsWindows fontSize={70} color="#fff" />,
-      name: "Windows",
+      icon: <SiPycharm fontSize={70} color="#fff" />,
+      name: "PyCharm",
     },
     {
       icon: <SiVisualstudiocode fontSize={70} color="#fff" />,
