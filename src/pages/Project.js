@@ -13,6 +13,16 @@ function Project() {
       />
       <div className="z-20 flex items-center justify-center gap-3 m-2 flex-wrap">
         <ProjectCard
+          name={"Travel World 🚀"}
+          image={"/project/TravelWorld.png"}
+          about={
+            "TravelWorld: FullStack MERN-based tour and travels app with integrated OpenAI-powered chatbot for seamless trip planning, ticket booking, and destination reviews.Razorpay payment integration to accept customer payments."
+          }
+          demo={"https://travel-world-drab.vercel.app/"}
+          code={"https://github.com/Upadhyay-Yatendra/TravelWorld"}
+        />
+
+        <ProjectCard
           name={
             <>
               Threads Clone <FontAwesomeIcon icon={faThreads} />
@@ -24,15 +34,6 @@ function Project() {
           }
           demo="https://cloning-threads.vercel.app/"
           code="https://github.com/Upadhyay-Yatendra/Cloning-Threads"
-        />
-        <ProjectCard
-          name={"Travel World 🚀"}
-          image={"/project/TravelWorld.png"}
-          about={
-            "TravelWorld: FullStack MERN-based tour and travels app with integrated OpenAI-powered chatbot for seamless trip planning, ticket booking, and destination reviews.Razorpay payment integration to accept customer payments."
-          }
-          demo={"https://travel-world-drab.vercel.app/"}
-          code={"https://github.com/Upadhyay-Yatendra/TravelWorld"}
         />
 
         <ProjectCard
