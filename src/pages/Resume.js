@@ -37,7 +37,7 @@ function Resume() {
         </Document>
         -------------------------------------------------------- */}
         <Document
-          file="../../Yatendra_upadhyay.pdf"
+          file="../../Yatendra_upadhyay_FullStack.pdf"
           className="flex justify-center shadow-xl"
         >
           <Page
@@ -47,7 +47,7 @@ function Resume() {
         </Document>
       </div>
       <a
-        href={"../../Yatendra_upadhyay.pdf"}
+        href={"../../Yatendra_upadhyay_FullStack.pdf"}
         target="_blank"
         rel="noreferrer"
         className="flex items-center z-20 justify-center gap-3 px-6 py-2 rounded  shadow-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out my-3"
