@@ -18,7 +18,7 @@ function Resume() {
         className="h-full w-full object-cover opacity-10 absolute bottom-0"
       />
       <a
-        href={"../../Yatendra_upadhyay_FullStack.pdf"}
+        href={"../../Yatendra_Resume.pdf"}
         target="_blank"
         rel="noreferrer"
         className="flex items-center z-20 justify-center gap-3 px-6 py-2 rounded  shadow-md text-white bg-purple-600 hover:bg-purple-700 transition duration-300 ease-in-out my-3"
