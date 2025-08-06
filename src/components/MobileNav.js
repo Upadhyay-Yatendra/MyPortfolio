@@ -76,14 +76,14 @@ function MobileNav({ showNav, setShowNav }) {
           href="https://www.linkedin.com/in/yatendra-upadhyay/"
           target="_blank"
           rel="noreferrer"
-          className="text-white hover:text-purple-300"
+          className="flex  w-24 my-5 mx-auto gap-2 justify-center items-center text-lg bg-fuchsia-900 px-3 py-[3px] border border-purple-700 rounded-sm"
           title="LinkedIn"
         >
           <AiFillLinkedin fontSize={24} />
         </a>
         <a
           href="mailto:yupadhyayyk@gmail.com"
-          className="text-white hover:text-purple-300"
+          className="flex  w-24 my-5 mx-auto gap-2 justify-center items-center text-lg bg-fuchsia-900 px-3 py-[3px] border border-purple-700 rounded-sm"
           title="Email"
         >
           <HiOutlineMail fontSize={24} />

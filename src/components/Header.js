@@ -90,14 +90,14 @@ function Header() {
           href="https://github.com/Upadhyay-Yatendra"
           target="_blank"
           rel="noreferrer"
-          className="flex mx-10 gap-2 text-lg bg-purple-900 px-5 py-[5px] border border-purple-700 rounded-sm hover:bg-purple-800 transition-all duration-200 hover:-translate-y-[2px]"
+          className="flex mx-5 gap-2 text-lg bg-purple-900 px-5 py-[5px] border border-purple-700 rounded-sm hover:bg-purple-800 transition-all duration-200 hover:-translate-y-[2px]"
         >
           <AiFillGithub fontSize={20} />
           <AiFillStar fontSize={20} />
         </a>
         <a
           href="mailto:yupadhyayyk@gmail.com"
-          className="text-white hover:text-purple-300 transition-all duration-200 mr-5"
+          className="flex mx-5 gap-2 text-lg bg-purple-900 px-5 py-[5px] border border-purple-700 rounded-sm hover:bg-purple-800 transition-all duration-200 hover:-translate-y-[2px]"
           title="Email Me"
         >
           <HiOutlineMail fontSize={24} />
@@ -107,7 +107,7 @@ function Header() {
           href="https://www.linkedin.com/in/yatendra-upadhyay/"
           target="_blank"
           rel="noreferrer"
-          className="text-white hover:text-purple-300 transition-all duration-200"
+          className="flex mx-5 gap-2 text-lg bg-purple-900 px-5 py-[5px] border border-purple-700 rounded-sm hover:bg-purple-800 transition-all duration-200 hover:-translate-y-[2px]"
           title="LinkedIn Profile"
         >
           <AiFillLinkedin fontSize={24} />
