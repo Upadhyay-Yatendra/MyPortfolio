@@ -4,8 +4,10 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiFillStar,
+  AiFillLinkedin,
 } from "react-icons/ai";
-import { FiUser, FiFileText } from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
+import { FiFileText } from "react-icons/fi";
 import { AiFillGithub } from "react-icons/ai";
 
 import { RiMenu3Fill } from "react-icons/ri";
@@ -55,7 +57,7 @@ function Header() {
               <span className="">Home</span>
             </Link>
           </li>
-          <li className="relative group">
+          {/* <li className="relative group">
             <Link
               to={"/about"}
               className="flex gap-1 items-center justify-center cursor-pointer text-base lg:text-lg font-semibold relative before:absolute before:rounded-md before:left-0 before:-bottom-1 before:w-0 transition-all before:duration-200 before:h-[4px] before:bg-purple-500 group-hover:before:w-full"
@@ -63,7 +65,7 @@ function Header() {
               <FiUser fontSize={20} />
               <span className="">About</span>
             </Link>
-          </li>
+          </li> */}
           <li className="relative group">
             <Link
               to={"/projects"}
@@ -92,6 +94,23 @@ function Header() {
         >
           <AiFillGithub fontSize={20} />
           <AiFillStar fontSize={20} />
+        </a>
+        <a
+          href="mailto:yupadhyayyk@gmail.com"
+          className="text-white hover:text-purple-300 transition-all duration-200 mr-5"
+          title="Email Me"
+        >
+          <HiOutlineMail fontSize={24} />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/yatendra-upadhyay/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white hover:text-purple-300 transition-all duration-200"
+          title="LinkedIn Profile"
+        >
+          <AiFillLinkedin fontSize={24} />
         </a>
       </div>
       <span>

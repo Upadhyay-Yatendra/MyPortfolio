@@ -3,8 +3,10 @@ import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiFillStar,
+  AiFillLinkedin,
 } from "react-icons/ai";
-import { FiUser, FiFileText } from "react-icons/fi";
+import { FiFileText , FiUser} from "react-icons/fi";
+import { HiOutlineMail } from "react-icons/hi";
 import { DiGitBranch } from "react-icons/di";
 
 import { Link } from "react-router-dom";
@@ -29,7 +31,7 @@ function MobileNav({ showNav, setShowNav }) {
               <span className="">Home</span>
             </Link>
           </li>
-          <li className="relative group">
+          {/* <li className="relative group">
             <Link
               to={"/about"}
               className="flex gap-1 items-center justify-center cursor-pointer text-base font-bold relative"
@@ -38,7 +40,7 @@ function MobileNav({ showNav, setShowNav }) {
               <FiUser fontSize={20} />
               <span className="">About</span>
             </Link>
-          </li>
+          </li> */}
           <li className="relative group">
             <Link
               to={"/projects"}
@@ -62,13 +64,29 @@ function MobileNav({ showNav, setShowNav }) {
         </ul>
 
         <a
-          href="https://github.com/riteshk-007/portfolio"
+          href="https://github.com/Upadhyay-Yatendra"
           target="_blank"
           rel="noreferrer"
           className="flex  w-24 my-5 mx-auto gap-2 justify-center items-center text-lg bg-fuchsia-900 px-3 py-[3px] border border-purple-700 rounded-sm"
         >
           <DiGitBranch fontSize={18} />
           <AiFillStar fontSize={18} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yatendra-upadhyay/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-white hover:text-purple-300"
+          title="LinkedIn"
+        >
+          <AiFillLinkedin fontSize={24} />
+        </a>
+        <a
+          href="mailto:yupadhyayyk@gmail.com"
+          className="text-white hover:text-purple-300"
+          title="Email"
+        >
+          <HiOutlineMail fontSize={24} />
         </a>
       </div>
     </div>

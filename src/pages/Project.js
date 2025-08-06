@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThreads } from "@fortawesome/free-brands-svg-icons";
 
+
 function Project() {
   return (
     <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row relative overflow-hidden ">
@@ -14,7 +15,10 @@ function Project() {
       <div className="z-20 flex items-center justify-center gap-3 m-2 flex-wrap">
         <ProjectCard
           name={"Travel World 🚀"}
-          image={"/project/TravelWorld.png"}
+          images={["/project/TravelWorld.png", 
+            "/project/TravelWorld2.png",
+            "/project/TravelWorld3.png",
+            "/project/TravelWorld4.png"]}
           about={
             "TravelWorld: FullStack MERN-based tour and travels app with integrated OpenAI-powered chatbot for seamless trip planning, ticket booking, and destination reviews.Razorpay payment integration to accept customer payments."
           }
@@ -28,7 +32,11 @@ function Project() {
               Threads Clone <FontAwesomeIcon icon={faThreads} />
             </>
           }
-          image="/project/Threads2.png"
+          images={["/project/Threads1.png",
+            "/project/Threads2.png",
+            "/project/Threads3.png",
+            "/project/Threads4.png",
+            "/project/Threads5.png"]}
           about={
             "Threads Clone: A streamlined MERN Stack replica fostering user connections, posts, and real-time chats via Socket.Io with dark mode functionality. Experience dynamic social interactions in a compact, feature-rich platform.Explore an enhanced social media environment where users can share, connect, and converse effortlessly."
           }
@@ -38,7 +46,7 @@ function Project() {
 
         <ProjectCard
           name={"PictoFusion 🖼️"}
-          image={"/project/DALLE.png"}
+          images={["/project/DALLE.png"]}
           about={
             "PictoFusion is a modern Ai using web app.It lets user generate Ai images based on the given prompt .Users can share their creations to the community platform "
           }
@@ -50,7 +58,7 @@ function Project() {
 
         <ProjectCard
           name={"Delishify 😋"}
-          image={"/project/recipe.jpg"}
+          images={["/project/recipe.jpg"]}
           about={
             "Meet Delishify – the responsive React based recipe app that lets you search for any food - it's recipe and ingredients with ease."
           }
@@ -60,7 +68,7 @@ function Project() {
 
         <ProjectCard
           name={"CodeX 🤖"}
-          image={"/project/img4.png"}
+          images={["/project/img4.png"]}
           about={
             "CodeX: The Responsive FullStack AI ChatBot that solves user queries instantly.It uses React on front-end and node-express on backend.Built using openAi plugins"
           }
@@ -70,7 +78,7 @@ function Project() {
 
         <ProjectCard
           name={"E-commerce platform Backend 🗃️"}
-          image={"/project/eCom.jpg"}
+          images={["/project/eCom.jpg"]}
           about={
             "This is a complete working Backend of an E-commerce platform like amazon.It has all the functionalities required for an e-commerce plaform."
           }

@@ -1,19 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import Tilt from "react-parallax-tilt";
-function ProjectCard({ name, about, image, demo, code, note }) {
+function ProjectCard({ name, about, images, demo, code, note }) {
+  
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length);
+  };
+
+  const goPrev = () => {
+    setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+  };
+
   return (
     <section className="text-gray-200 body-font  rounded-lg">
       <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex justify-center items-center">
+        {/* Image & Tilt */}
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 flex flex-col justify-center items-center">
           <Tilt>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center relative">
               <img
-                className="object-cover object-center rounded-3xl  max-h-96 w-auto"
+                className="object-cover object-center rounded-3xl max-h-96 w-auto"
                 alt="project"
-                src={image}
+                src={images[currentIndex]}
               />
+              {/* Navigation Buttons */}
+              <div className="absolute bottom-2 flex justify-center gap-4">
+                <button
+                  onClick={goPrev}
+                  className="bg-black/60 text-white px-3 py-1 rounded-full hover:bg-black"
+                >
+                  &#8592;
+                </button>
+                <button
+                  onClick={goNext}
+                  className="bg-black/60 text-white px-3 py-1 rounded-full hover:bg-black"
+                >
+                  &#8594;
+                </button>
+              </div>
             </div>
           </Tilt>
         </div>
