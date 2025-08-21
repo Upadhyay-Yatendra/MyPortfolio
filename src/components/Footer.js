@@ -31,7 +31,7 @@ function Footer() {
           <RiTwitterXFill />
         </a>
         <a
-          href="https://www.linkedin.com/in/yatendra-upadhyay-33b84a202/"
+          href="https://www.linkedin.com/in/yatendra-upadhyay/"
           target="_blank"
           rel="noreferrer"
           className="text-white"
