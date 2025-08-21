@@ -45,7 +45,7 @@ function Project() {
         <ProjectCard
           name={
             <>
-              Threads Clone <FontAwesomeIcon icon={faThreads} />
+              Threadify 
             </>
           }
           images={[
@@ -56,14 +56,14 @@ function Project() {
             "/project/Threads5.png",
           ]}
           about={
-            "Threads Clone: A streamlined MERN Stack replica fostering user connections, posts, and real-time chats via Socket.Io with dark mode functionality. Experience dynamic social interactions in a compact, feature-rich platform.Explore an enhanced social media environment where users can share, connect, and converse effortlessly."
+            "Threadify: A full-Stack application fostering user connections, posts, and real-time chats via Socket.Io with dark mode functionality. Experience dynamic social interactions in a compact, feature-rich platform.Explore an enhanced social media environment where users can share, connect, and converse effortlessly."
           }
           demo="https://threadify-omega.vercel.app/"
           code="https://github.com/Upadhyay-Yatendra/Threadify"
         />
 
         <ProjectCard
-          name={"PictoFusion 🖼️"}
+          name={"PictoFusion"}
           images={["/project/DALLE.png"]}
           about={
             "PictoFusion is a modern Ai using web app.It lets user generate Ai images based on the given prompt .Users can share their creations to the community platform "
