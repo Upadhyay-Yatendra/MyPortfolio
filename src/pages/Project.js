@@ -94,7 +94,7 @@ function Project() {
           code={"https://github.com/Upadhyay-Yatendra/CodeX"}
         />
 
-        <ProjectCard
+        {/* <ProjectCard
           name={"E-commerce platform Backend 🗃️"}
           images={["/project/eCom.jpg"]}
           about={
@@ -102,7 +102,7 @@ function Project() {
           }
           demo={"https://ecom-api-1qfd.onrender.com/"}
           code={"https://github.com/Upadhyay-Yatendra/Ecom-api"}
-        />
+        /> */}
       </div>
     </div>
   );
