@@ -3,7 +3,6 @@ import ProjectCard from "../components/ProjectCard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faThreads } from "@fortawesome/free-brands-svg-icons";
 
-
 function Project() {
   return (
     <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row relative overflow-hidden ">
@@ -14,11 +13,28 @@ function Project() {
       />
       <div className="z-20 flex items-center justify-center gap-3 m-2 flex-wrap">
         <ProjectCard
+          name={"MockView"}
+          images={[
+            "/project/MockView1.png",
+            "/project/MockView2.png",
+            "/project/MockView3.png",
+            "/project/MockView4.png",
+            "/project/MockView5.png",
+          ]}
+          about={
+            "MockView: Next.js-based AI-powered mock interview and test platform with PostgreSQL (NeonDB) + Drizzle ORM for scalable data handling, Clerk for authentication, and Redis for caching/rate-limiting. Features include AI-generated mock tests with detailed feedback, ratings, and reports; PDF + email system built with Node.js, BullMQ, PDFKit, and Nodemailer handling 1000+ requests/min with 99.9% uptime; optimized Redis caching reducing response time from 2s to 60ms."
+          }
+          demo={"https://mock-view-eosin.vercel.app/"}
+          code={"https://github.com/Upadhyay-Yatendra/MockView"}
+        />
+        <ProjectCard
           name={"Travel World 🚀"}
-          images={["/project/TravelWorld.png", 
+          images={[
+            "/project/TravelWorld.png",
             "/project/TravelWorld2.png",
             "/project/TravelWorld3.png",
-            "/project/TravelWorld4.png"]}
+            "/project/TravelWorld4.png",
+          ]}
           about={
             "TravelWorld: FullStack MERN-based tour and travels app with integrated OpenAI-powered chatbot for seamless trip planning, ticket booking, and destination reviews.Razorpay payment integration to accept customer payments."
           }
@@ -32,16 +48,18 @@ function Project() {
               Threads Clone <FontAwesomeIcon icon={faThreads} />
             </>
           }
-          images={["/project/Threads1.png",
+          images={[
+            "/project/Threads1.png",
             "/project/Threads2.png",
             "/project/Threads3.png",
             "/project/Threads4.png",
-            "/project/Threads5.png"]}
+            "/project/Threads5.png",
+          ]}
           about={
             "Threads Clone: A streamlined MERN Stack replica fostering user connections, posts, and real-time chats via Socket.Io with dark mode functionality. Experience dynamic social interactions in a compact, feature-rich platform.Explore an enhanced social media environment where users can share, connect, and converse effortlessly."
           }
-          demo="https://cloning-threads.vercel.app/"
-          code="https://github.com/Upadhyay-Yatendra/Cloning-Threads"
+          demo="https://threadify-omega.vercel.app/"
+          code="https://github.com/Upadhyay-Yatendra/Threadify"
         />
 
         <ProjectCard
