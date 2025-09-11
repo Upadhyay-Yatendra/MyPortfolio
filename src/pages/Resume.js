@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import { BiDownload } from "react-icons/bi";
-import { AiOutlineLoading3Quarters } from "react-icons/ai"; // spinner icon
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -35,9 +34,13 @@ function Resume() {
       {/* PDF container */}
       <div className="py-[50px] flex justify-center flex-col items-center overflow-hidden z-20 min-h-[80vh] w-full">
         {loading && (
-          <div className="flex flex-col items-center justify-center h-full gap-3 animate-pulse">
-            <AiOutlineLoading3Quarters className="animate-spin text-purple-600" size={40} />
-            <p className="text-gray-600">Loading resume...</p>
+          <div className="w-[600px] h-[800px] max-w-full rounded-lg shadow-xl bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 animate-pulse flex flex-col justify-center items-center">
+            <div className="w-3/4 h-6 bg-gray-400/40 rounded mb-6"></div>
+            <div className="w-5/6 h-4 bg-gray-400/30 rounded mb-3"></div>
+            <div className="w-5/6 h-4 bg-gray-400/30 rounded mb-3"></div>
+            <div className="w-2/3 h-4 bg-gray-400/30 rounded mb-3"></div>
+            <div className="w-4/5 h-4 bg-gray-400/30 rounded mb-3"></div>
+            <div className="w-1/2 h-4 bg-gray-400/30 rounded"></div>
           </div>
         )}
 
